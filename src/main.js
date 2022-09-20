@@ -19,8 +19,10 @@ perfmon.startMemMonitor();
 perfmon.initProfiler('view update');
 
 function redraw () {
+	const next = ENV.generateData().toArray();
+
 	perfmon.startProfile('view update');
-	app.dbs = ENV.generateData().toArray();
+	app.dbs = next;
 	perfmon.endProfile('view update');
 
 	setTimeout(redraw, ENV.timeout);
