@@ -1,8 +1,17 @@
-body {
-	font-family: sans-serif;
-	font-size: 16px;
-	line-height: 1.5em;
-	background: #f5f5f5;
-	margin: 0;
+table {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
 }
 
+.Query {
+  position: relative;
+}
+
+.Query:hover .popover {
+  left: -100%;
+  width: 100%;
+  display: block;
+}

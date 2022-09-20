@@ -1,34 +1,32 @@
 <script>
-	export let name;
+	export let dbs = [];
 </script>
 
-<div class='main'>
-	<h3>Hello <span>{name}</span>!</h3>
-	<p>Edit <code>src/App.velvet</code> and reload to see your changes</p>
-</div>
+<table class='table table-striped latest-data'>
+	<tbody>
+		{#each dbs as db}
+			<tr>
+				<td class='dbname'>
+					{db.dbname}
+				</td>
 
-<style>
-	.main {
-		text-align: center;
-		width: 600px;
-		margin: 48px auto;
-	}
+				<td class='query-count'>
+					<span class={db.lastSample.countClassName}>
+						{db.lastSample.nbQueries}
+					</span>
+				</td>
 
-	.main h3 {
-		font-size: 24px;
-		font-weight: 500;
-	}
+				{#each db.lastSample.topFiveQueries as query}
+					<td class={`Query ${query.elapsedClassName}`}>
+						{query.formatElapsed}
 
-	.main span {
-		color: #df0000;
-	}
-
-	.main code {
-		color: #ffffff;
-		background-color: #343434;
-		font-size: 14px;
-		padding: 2px 4px;
-		vertical-align: middle;
-		border-radius: 4px;
-	}
-</style>
+						<div class='popover left'>
+							<div class='popover-content'>{query.query}</div>
+							<div class='arrow'></div>
+						</div>
+					</td>
+				{/each}
+			</tr>
+		{/each}
+	</tbody>
+</table>

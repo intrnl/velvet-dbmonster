@@ -2,16 +2,18 @@ lockfileVersion: 5.4
 
 specifiers:
   '@intrnl/esbuild-plugin-velvet': ^0.5.2
-  '@intrnl/velvet': ^0.4.8
+  '@intrnl/velvet': ^0.4.9
   '@intrnl/velvet-compiler': ^0.7.2
   esbuild: ^0.15.8
+  perf-monitor: ^0.4.1
 
 dependencies:
-  '@intrnl/velvet': 0.4.8
+  '@intrnl/velvet': 0.4.9
+  perf-monitor: 0.4.1
 
 devDependencies:
   '@intrnl/esbuild-plugin-velvet': 0.5.2_wlofesey2xmik3lxynwshwp2bu
-  '@intrnl/velvet-compiler': 0.7.2_@intrnl+velvet@0.4.8
+  '@intrnl/velvet-compiler': 0.7.2_@intrnl+velvet@0.4.9
   esbuild: 0.15.8
 
 packages:
@@ -43,7 +45,7 @@ packages:
       esbuild: ^0.14.8 || ^0.15.0
     dependencies:
       '@intrnl/fs-cache': 0.2.3
-      '@intrnl/velvet-compiler': 0.7.2_@intrnl+velvet@0.4.8
+      '@intrnl/velvet-compiler': 0.7.2_@intrnl+velvet@0.4.9
       esbuild: 0.15.8
     dev: true
 
@@ -55,19 +57,19 @@ packages:
       stable-hash: 0.0.2
     dev: true
 
-  /@intrnl/velvet-compiler/0.7.2_@intrnl+velvet@0.4.8:
+  /@intrnl/velvet-compiler/0.7.2_@intrnl+velvet@0.4.9:
     resolution: {integrity: sha512-O2EKO+i2N3jBvzD4alHtg5W6NJei4Vlij/ORA4gHCtzbFlDk55pxWKaEX+/MaGtmnh0qivuB/CDyigtLyw1ZWQ==}
     peerDependencies:
       '@intrnl/velvet': ^0.4.5
     dependencies:
-      '@intrnl/velvet': 0.4.8
+      '@intrnl/velvet': 0.4.9
       acorn: 8.8.0
       astring: 1.8.3
       gensync: 1.0.0-beta.2
     dev: true
 
-  /@intrnl/velvet/0.4.8:
-    resolution: {integrity: sha512-JEt965/Er6sXE1Kuh7k+g+l5txXkls+/sklLw6BEGbyzsLNxBKrNv/X1EapGD2b10KNsB4TdzW7cX68un7Q/BA==}
+  /@intrnl/velvet/0.4.9:
+    resolution: {integrity: sha512-FbOYLil9+gsxf1/t/MkXibidpgWA9+/s933pp4FkUQ34V4AegHjNCX2BcPbMhApSZ5aj9xRxElfrSg0GcnAXKA==}
 
   /@intrnl/xxhash64/0.1.2:
     resolution: {integrity: sha512-1+lx7j99fdph+uy3EnjQyr39KQZ7LP56+aWOr6finJWpgYpvb7XrhFUqDwnEk/wpPC98nCjAT6RulpW3crWjlg==}
@@ -313,6 +315,10 @@ packages:
     resolution: {integrity: sha512-3hN7NaskYvMDLQY55gnW3NQ+mesEAepTqlg+VEbj7zzqEMBVNhzcGYYeqFo/TlYz6eQiFcp1HcsCZO+nGgS8zg==}
     engines: {node: '>=6.9.0'}
     dev: true
+
+  /perf-monitor/0.4.1:
+    resolution: {integrity: sha512-7YEPzus05EdY6YbMlcvzX0iQFyXRd6I4IdRWHmqxFBY3+Hq/vHb4EIYll3n8ufA6lPBUhdkUEuk8/+b8nzbHDg==}
+    dev: false
 
   /stable-hash/0.0.2:
     resolution: {integrity: sha512-tPwQ3c1rLIwbJpq59duoznegEbmgfV630C2n4R4G96LKBFljgK8j+O9AxjqB6cAzu4gE7s4pByrLWtZel8E+Mg==}
