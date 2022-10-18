@@ -2,18 +2,18 @@ lockfileVersion: 5.4
 
 specifiers:
   '@intrnl/esbuild-plugin-velvet': ^0.5.4
-  '@intrnl/velvet': ^0.4.13
+  '@intrnl/velvet': ^0.4.15
   '@intrnl/velvet-compiler': ^0.7.8
   esbuild: ^0.15.11
   perf-monitor: ^0.4.1
 
 dependencies:
-  '@intrnl/velvet': 0.4.13
+  '@intrnl/velvet': 0.4.15
   perf-monitor: 0.4.1
 
 devDependencies:
   '@intrnl/esbuild-plugin-velvet': 0.5.4_eokuv7apbeioiotul4ppvp5f2m
-  '@intrnl/velvet-compiler': 0.7.8_@intrnl+velvet@0.4.13
+  '@intrnl/velvet-compiler': 0.7.8_@intrnl+velvet@0.4.15
   esbuild: 0.15.11
 
 packages:
@@ -43,7 +43,7 @@ packages:
       esbuild: ^0.14.8 || ^0.15.0
     dependencies:
       '@intrnl/fs-cache': 0.2.3
-      '@intrnl/velvet-compiler': 0.7.8_@intrnl+velvet@0.4.13
+      '@intrnl/velvet-compiler': 0.7.8_@intrnl+velvet@0.4.15
       esbuild: 0.15.11
     dev: true
 
@@ -55,19 +55,19 @@ packages:
       stable-hash: 0.0.2
     dev: true
 
-  /@intrnl/velvet-compiler/0.7.8_@intrnl+velvet@0.4.13:
+  /@intrnl/velvet-compiler/0.7.8_@intrnl+velvet@0.4.15:
     resolution: {integrity: sha512-LzLDnAUvftGffs537psVLnRwW2hDrDNa43za9lhx1nXDS9ouBq/i/J4CfXt1EtjK1v9N2Dungt8MiN3ygXsaQA==}
     peerDependencies:
       '@intrnl/velvet': ^0.4.13
     dependencies:
-      '@intrnl/velvet': 0.4.13
+      '@intrnl/velvet': 0.4.15
       acorn: 8.8.0
       astring: 1.8.3
       gensync: 1.0.0-beta.2
     dev: true
 
-  /@intrnl/velvet/0.4.13:
-    resolution: {integrity: sha512-IBozVEzcXWrtL5v2iDdkuH/Mhs+w3HqwxB5HMuNTxmvV4W4PD1lXq7JpjsD0AY9yWH9SfKB/eL0G0Bxf0w1Cyg==}
+  /@intrnl/velvet/0.4.15:
+    resolution: {integrity: sha512-27xnAONoAqRRyOqEih5XkkM9muurK3CcpXlrVkWitcibMzjr+g3LNlKv7dADK+spQW/jKiZYQNUfm1NceuLEKA==}
 
   /@intrnl/xxhash64/0.1.2:
     resolution: {integrity: sha512-1+lx7j99fdph+uy3EnjQyr39KQZ7LP56+aWOr6finJWpgYpvb7XrhFUqDwnEk/wpPC98nCjAT6RulpW3crWjlg==}
