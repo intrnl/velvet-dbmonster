@@ -10,7 +10,7 @@
 		"publish": "rm -r dist/_assets; pnpm run build; scripts/publish.sh"
 	},
 	"dependencies": {
-		"@intrnl/velvet": "^0.4.15",
+		"@intrnl/velvet": "^0.4.16",
 		"perf-monitor": "^0.4.1"
 	},
 	"devDependencies": {
